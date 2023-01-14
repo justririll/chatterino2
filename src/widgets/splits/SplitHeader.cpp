@@ -1038,7 +1038,7 @@ void SplitHeader::reloadSubscriberEmotes()
     this->lastReloadedSubEmotes_ = now;
 
     auto channel = this->split_->getChannel();
-    getApp()->accounts->twitch.getCurrent()->loadEmotes(channel);
+    // TODO: Call twitch channel's reloadEmotes
 }
 
 void SplitHeader::reconnect()
