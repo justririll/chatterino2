@@ -81,7 +81,7 @@ Env::Env()
     : recentMessagesApiUrl(
           readStringEnv("CHATTERINO2_RECENT_MESSAGES_URL",
                         "http://localhost:8080/api/v1//api/v2/"
-                        "localhost:8080/%1"))
+                        "recent-messages/%1"))
     , linkResolverUrl(readStringEnv(
           "CHATTERINO2_LINK_RESOLVER_URL",
           "https://braize.pajlada.com/chatterino/link_resolver/%1"))
